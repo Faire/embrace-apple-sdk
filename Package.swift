@@ -4,7 +4,7 @@
 import Foundation
 import PackageDescription
 
-var targetPlugins: [Target.PluginUsage] = [.plugin(name: "SwiftLintPlugin", package: "SwiftLint")]
+var targetPlugins: [Target.PluginUsage] = []
 // Work around for plugin dependency being included in iOS target when using `xcodebuild test`
 // (See bin/xctest)
 // https://forums.swift.org/t/xcode-attempts-to-build-plugins-for-ios-is-there-a-workaround/57029
@@ -37,10 +37,6 @@ let package = Package(
         .package(
             url: "https://github.com/groue/GRDB.swift",
             exact: "6.29.1"
-        ),
-        .package(
-            url: "https://github.com/realm/SwiftLint",
-            exact: "0.53.0"
         ),
         .package(
             url: "https://github.com/apple/swift-docc-plugin",
