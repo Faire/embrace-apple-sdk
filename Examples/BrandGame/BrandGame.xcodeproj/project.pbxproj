@@ -555,7 +555,7 @@
 			mainGroup = 7B5630812ABE743400E0DF39;
 			packageReferences = (
 				FAEF5A0F2C6BA46F00484474 /* XCLocalSwiftPackageReference "../.." */,
-				FA0347122E65F63100FB7E87 /* XCRemoteSwiftPackageReference "opentelemetry-swift-core" */,
+				FA0347122E65F63100FB7E87 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */,
 			);
 			productRefGroup = 7B56308B2ABE743400E0DF39 /* Products */;
 			projectDirPath = "";
@@ -891,12 +891,12 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FA0347122E65F63100FB7E87 /* XCRemoteSwiftPackageReference "opentelemetry-swift-core" */ = {
+		FA0347122E65F63100FB7E87 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/open-telemetry/opentelemetry-swift-core";
+			repositoryURL = "https://github.com/open-telemetry/opentelemetry-swift";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.1.1;
+				kind = revision;
+				revision = 0600d121dec7bb8fa20129cc8376fe43c1235b25;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -904,7 +904,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		FA0347132E65F63100FB7E87 /* StdoutExporter */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA0347122E65F63100FB7E87 /* XCRemoteSwiftPackageReference "opentelemetry-swift-core" */;
+			package = FA0347122E65F63100FB7E87 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */;
 			productName = StdoutExporter;
 		};
 		FA3B0A102C3C2A5600315578 /* EmbraceCore */ = {

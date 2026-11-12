@@ -34,8 +34,8 @@ let package = Package(
             exact: "2.6.0"
         ),
         .package(
-            url: "https://github.com/open-telemetry/opentelemetry-swift-core",
-            from: "2.1.1"
+            url: "https://github.com/open-telemetry/opentelemetry-swift.git",
+            revision: "0600d121dec7bb8fa20129cc8376fe43c1235b25"
         ),
         .package(
             url: "https://github.com/swiftlang/swift-syntax.git",
@@ -69,7 +69,7 @@ let package = Package(
                 "EmbraceKSCrashBacktraceSupport",
                 "TestSupport",
                 "TestSupportObjc",
-                .product(name: "OpenTelemetrySdk", package: "opentelemetry-swift-core")
+                .product(name: "OpenTelemetrySdk", package: "opentelemetry-swift")
             ]
         ),
 
@@ -193,7 +193,7 @@ let package = Package(
             dependencies: [
                 "EmbraceCommonInternal",
                 "EmbraceSemantics",
-                .product(name: "OpenTelemetrySdk", package: "opentelemetry-swift-core")
+                .product(name: "OpenTelemetrySdk", package: "opentelemetry-swift")
             ]
         ),
         .testTarget(
@@ -202,7 +202,7 @@ let package = Package(
                 "EmbraceOTelBridge",
                 "EmbraceSemantics",
                 "EmbraceCommonInternal",
-                .product(name: "OpenTelemetrySdk", package: "opentelemetry-swift-core"),
+                .product(name: "OpenTelemetrySdk", package: "opentelemetry-swift"),
                 "TestSupport"
             ]
         ),
@@ -338,7 +338,7 @@ let package = Package(
             dependencies: [
                 "EmbraceCore",
                 "EmbraceCommonInternal",
-                .product(name: "OpenTelemetrySdk", package: "opentelemetry-swift-core")
+                .product(name: "OpenTelemetrySdk", package: "opentelemetry-swift")
             ],
             path: "Tests/TestSupport",
             exclude: ["Objc"]
